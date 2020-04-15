@@ -18,7 +18,8 @@ Create a variable called `monthlyInterestRate` and give it the value of interest
 
 Create another variable called `periods` and give it the value of years*12.
 */
-
+let monthlyInterestRate = interestRate / 12;
+let periods = year * 12;
 
 
 
@@ -30,8 +31,15 @@ Hint: while these calculations can be done in one line, it might be helpful to c
 Hint #2: you'll need to use the `math` object for parts of this calculation!
 
 When your math is correct, monthlyRate will equal 1073.64
-*/
+monthlyInterestRate = periods[i(1 + i) ^ N] / [(1 + i) ^ N - 1]
+// */
 
+
+
+var numerator = monthlyInterestRate * Math.pow((1 + monthlyInterestRate), periods)
+var denominator = Math.pow((1 + monthlyInterestRate), periods) - 1;
+var monthlyRate = numerator / denominator * principal;
+console.log(monthlyRate);
 
 
 
