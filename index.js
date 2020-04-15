@@ -2,8 +2,11 @@
 
 // 🏡 Task 1: Variables
 /* Create variables for principal, interest rate, and years. Assign them the values 200000, 0.05, and 30 respectively. Create another value called name and give it the value of your own name.
-*/
-
+ */
+let principal = '200000';
+let interestRate = 0.05;
+let year = 30;
+let name = 'gregory';
 
 
 
