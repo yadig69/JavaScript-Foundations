@@ -42,14 +42,16 @@ var monthlyRate = numerator / denominator * principal;
 console.log(monthlyRate);
 
 
-
 // 🏡 Task 3: Function
 /* Create a function called `mortgageCalculator` that combines all of the steps from task 1 and 2 and returns a sentence "{Name}, your monthly rate is ${monthlyRate}"
 
 If your name is `Oscar` mortgageCalculator() should return "Oscar, your monthly rate is 1073.64"
 */
+function mortgageCalculator() {
+    return name + ',your monthly rate is' + monthlyRate;
+}
 
-
+console.log(mortgageCalculator());
 
 
 
@@ -59,9 +61,11 @@ If your name is `Oscar` mortgageCalculator() should return "Oscar, your monthly 
 For example,
 mortgageCalculator(2000000, 0.05, 30); <-- should return 1,073.64
 */
+function mortgageCalculator(P, I, N) {
+    return (Math.round(P * (((I / 12) * Math.pow((1 + (I / 12)), (N * 12))) / (Math.pow((1 + (I / 12)), (N * 12)) - 1)) * 100) / 100)
+}
 
-
-
+console.log(mortgageCalculator(2000000, 0.05, 30));
 
 
 // 🏡 Task 5: Conditionals
